@@ -1,0 +1,143 @@
+:root {
+    --star-size: 60px;
+    --star-color: #cecece;
+    --star-background: #fc0;
+}
+.Stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+}
+.Stars::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contenedor_imagen_joya{
+    width: 50%;
+    height: 40% ;
+}
+.contenedor_imagen_joya>img{
+    width: 100%;
+    height: 100%;
+}
+.categoria{
+    margin-bottom: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    gap: 10px;
+}
+.categoria>article{
+    background-color: #3d6692;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 5vh;
+    width: 40%;
+    min-width: 400px;
+}
+.categoria>article>div:nth-child(3){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.categoria>article>h3{
+    color: rgb(3, 3, 82);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    width: 100%;
+    height: 40%;
+    text-shadow: white 0.1em 0.1em 0.2em
+    
+}
+.categoria p{
+    color: white;
+    margin-left: 10%;
+    font-size: x-large;
+}
+.categoria a{
+    color: black;
+    font-size: larger;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.categoria a:hover{
+    background-color:rgb(3, 3, 82);
+    cursor: pointer;
+    transition:ease 1s;
+    transform: scale(1.1);
+    font-size: x-large;
+    color: white;
+    transition:ease 1s;
+    
+}
+
+
+.masYmenos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.lineas{
+    width: 20px;
+    height: 5px;
+    background-color: black;
+}
+.mas>.lineas:last-child{
+    transform: rotate(90deg);
+}
+.mas>.lineas:first-child, .menos>div{
+    transform: translateY(5px);
+}
+.detalles{
+    color: white;
+}
+.detalles>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.detalles>div>div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comprar{
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.comprar:hover{
+    cursor: pointer;
+    transition: 1s ease;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px #FFF;
+}
+.mas:hover,.menos:hover{
+    cursor: pointer;
+    transition: 1s ease;
+    transform: scale(1.5);
+}
+.mas:hover>*,.menos:hover>*{
+    cursor: pointer;
+    transition: 1s ease;
+    transform: scale(1.2);
+    
+}

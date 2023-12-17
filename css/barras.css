@@ -1,0 +1,114 @@
+.container__barras{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 130px;
+}
+
+ul:hover .container__barras>.barra:first-child{
+    animation: barras 1.5s ease forwards;
+}
+
+@keyframes barras {
+    0%{
+        transform:  translateY( 1vh) rotate(405deg) translateX(3vh);
+    }
+    50%{
+        transform: translateY( 50vh);
+    }
+    100%{
+        transform:  translateY( 1vh) rotate(405deg) translateX(3vh);
+    }
+    
+}
+ul:hover .container__barras>.barra:nth-child(2){
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+ul:hover .container__barras>.barra:last-child{
+    animation: barras3 1.5s ease forwards;
+}
+
+@keyframes barras3 {
+    0%{
+        transform:   translateY(1vh)  rotate(495deg) translatex(-3vh);
+    }
+    50%{
+        transform: translateY( 50vh);
+    }
+    100%{
+        transform:   translateY(1vh)  rotate(495deg) translatex(-3vh);
+    }
+    
+}
+ul:hover .container__li{
+    animation: lis 2s ease forwards;
+    position: fixed;
+    height: 50vh;
+    padding: 10px;
+    width: 20vw;
+    color: white;
+    background-image: radial-gradient(circle at 37.72% 119.64%, #d3b0ff 0, #b79eff 25%, #958cff 50%, #6a7bf9 75%, #206df4 100%);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+@keyframes lis {
+    from{
+        transform: translateY(-20vh) translateX(-10vw);
+    }
+    to{
+        transform: translateY(34.8vh) translateX(2vw);
+    }
+}
+
+
+.barra{
+    z-index: 100;
+    height: 1vh;
+    width: 80px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.container__li{
+    border-bottom-right-radius: 10px;
+    color: white;
+    display: none;
+}
+
+li{
+    
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    list-style: none;
+    font-size: x-large;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+li>a{
+    color: white;
+}
+li:hover{
+    cursor: pointer;
+    background-color: rgb(149, 142, 255);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px 2px #FFF;
+}
+.joyas:hover a{
+    color: blue;
+}

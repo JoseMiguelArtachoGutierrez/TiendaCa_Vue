@@ -1,0 +1,11 @@
+@media (max-width:1040px) {
+    .form::after{
+        display: none;
+    }
+    .form::before{
+        display: none;
+    }
+    .form{
+        width: 70%;
+    }
+}

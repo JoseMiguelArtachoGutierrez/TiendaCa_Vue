@@ -1,0 +1,77 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+}
+header>*{
+    color: white;
+}
+.container__imgLogo>a>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.container__imgLogo{
+
+    border-radius: 50%;
+}
+.button__container__img{
+    width: 3vw;
+    height: 7vh;
+}
+header button{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.botones{
+    margin-right: 5vw;
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cesta,.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    width: 75px;
+}
+.cesta{
+    z-index: 1000;
+    background-color: #1e579900;
+    border-radius: 50%;
+}
+.login{
+    height: 50px;
+    width: 100px;
+}
+.login:hover,.cesta:hover{
+    background-color:#3d6692;
+    cursor: pointer;
+    transition:ease 1s;
+    transform: scale(1.2);
+    font-size: x-large;
+}
+.cesta:hover{
+    transform: scale(1.5);
+    background-color:#ffffff00;
+}
+.login:hover a{
+    color: white;
+    transition:ease 1s;
+}

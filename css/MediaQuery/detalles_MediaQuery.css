@@ -1,0 +1,17 @@
+@media (max-width:1025px){
+    main{
+        flex-direction: column;
+    }
+    main article{
+        width: 95%;
+    }
+    .contenedor_barra_vertical{
+        height: 6vh;
+        width: 95%;
+    }
+    .barra_vertical{
+        height: 40%;
+        width: 90%;
+    }
+
+}

@@ -1,0 +1,39 @@
+img{
+    width: 100%;
+    height: 100%;
+}
+.carrusel{
+    background: linear-gradient(#b4bfdb,white,white,#b4bfdb);
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel__container_ing{
+    position: absolute;
+    display: none;
+    width: 200px;
+    height: 200px;
+}
+.movimiento{
+    display: block;
+    animation: carrusel 10s ease;
+}
+@keyframes carrusel {
+    0%{
+        display: none;
+        opacity: 0;
+        transform: translateX(40vw);
+    }
+    50%{
+        transform: translateX(0vw);
+        opacity: 1;
+        display: block;
+    }
+    100%{
+        transform: translateX(-100vw);
+        opacity: 0;
+        display: none;
+    }
+}

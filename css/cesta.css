@@ -1,0 +1,76 @@
+.cesta_contenedor_img{
+    width: 40%;
+    height: 100%;
+}
+.cestaDiv>div{ 
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5vh;
+}
+.cestaDiv>div>p{
+    width: 100%;
+    text-align: center;
+}
+.contenido{
+    width: 60%;
+}
+.contenido>h3{
+    width: 100%;
+}
+.productos{
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: var(--color-secundario-fondo);
+    padding-left: 20px;
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+.productos>div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor__imgYtitulo{
+    height: 25vh;
+    width: 100%;
+    gap: 2%;
+    display: flex;
+    padding: 10px;
+    
+}
+.pagar{
+    border-radius: 5px;
+    font-size: xx-large;
+    color: white;
+    background-color: var(--color-titulos);
+    margin-top: 7%;
+    margin-left: 65%;
+    width: 30%;
+    height: 10%;
+    position: fixed;
+}
+.pagar:hover{
+    cursor: pointer;
+    transition: 1s ease;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 10px #FFF;
+}
+.cantidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cantidadProductos{
+    background-color: var(--color-secundario-fondo);
+    border-radius: 50%;
+    padding: 20px;
+    top: 20px;
+    left: 87.5%;
+    position: fixed;
+}

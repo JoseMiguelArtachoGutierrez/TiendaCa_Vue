@@ -1,0 +1,8 @@
+@media (max-width:700px) {
+    header>*{
+        width: 20%;
+    }
+    .container__imgLogo{
+        width: 20%;
+    }
+}

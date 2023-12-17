@@ -1,0 +1,50 @@
+:root {
+    --color-fondo: #b4bfdb;
+    --color-secundario-fondo:#3d6692;
+    --fondo-barras:rgb(149, 142, 255);
+    --color-letra-login:#838383;
+    --color-titulos:rgb(3, 3, 82);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:var(--color-fondo);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    margin: 0;
+}
+header {
+    width: 100%;
+    grid-area: header;
+  }
+main {
+    margin-top: 21vh;
+    width: 100%;
+    grid-area: main;
+    grid-column: span 12;
+}
+footer {
+    width: 100%;
+    grid-area: footer;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    cursor: pointer;
+}
